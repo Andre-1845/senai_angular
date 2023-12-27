@@ -1,28 +1,14 @@
-  <mat-toolbar color="primary">
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span><img src="../../assets/images/logoGames.png" alt="" /></span>
-    <span>Produtos</span>
-    <span class="example-spacer"></span>
-    <button
-      mat-icon-button
-      class="example-icon favorite-icon"
-      aria-label="Example icon-button with heart icon"
-    >
-      <mat-icon>z</mat-icon>
-    </button>
-    <span>Contato</span>
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with share icon"
-    >
-      <mat-icon>X</mat-icon>
-    </button>
-    <span>Login</span>
-  </mat-toolbar>
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span><a routerLink="inicio" ><img src="../../assets/images/logoGames.png" alt="" /></a></span>
+  <span><a routerLink="inicio" >Produtos</a></span>
+  <span class="example-spacer"></span>
+  <span>Contato</span>
+  <span><a routerLink="login" >Login</a></span>
+</mat-toolbar>
