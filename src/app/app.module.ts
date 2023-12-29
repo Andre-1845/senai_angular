@@ -12,6 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RestritoRoutingModule } from './restrito/restrito-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
@@ -23,6 +24,8 @@ import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-p
 import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     CadastroProdutoComponent,
     ListaProdutoComponent,
     MenuRestritoComponent
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,11 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     MatGridListModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RestritoRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
