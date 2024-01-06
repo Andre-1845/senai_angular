@@ -9,9 +9,9 @@ import { RestritoComponent } from './restrito.component';
 const restritoRoutes: Routes = [
     {
         path: 'restrito', component: RestritoComponent, children: [
-            { path: 'cadastro', component: CadastroProdutoComponent, },
-            { path: 'lista', component: ListaProdutoComponent, },
-            { path: 'editar/:id', component: AtualizaProdutoComponent, }
+            { path: 'cadastro', component: CadastroProdutoComponent },
+            { path: 'lista', component: ListaProdutoComponent },
+            { path: 'editar/:id', component: AtualizaProdutoComponent }
         ]
     },
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Produto } from 'src/app/models/Produto.model';
-import { ProdutoService } from 'src/app/produto.service';
+import { Produto } from '../../models/Produto.model';
+import { ProdutoService } from '../../produto.service';
 
 @Component({
   selector: 'app-cadastro-produto',
@@ -12,7 +12,7 @@ export class CadastroProdutoComponent {
 
   public produto: Produto = new Produto(0,"","","",0);
 
-  constructor(private _produtoService:ProdutoService, private _router: Router){}
+  constructor(private _produtoService: ProdutoService, private _router: Router){}
 
   cadastrar():void{
     this._produtoService.cadastrarProduto(this.produto).subscribe(
